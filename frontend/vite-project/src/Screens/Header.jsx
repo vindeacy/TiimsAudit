@@ -1,9 +1,8 @@
 import React from 'react'
 import Container from 'react-bootstrap/Container';
-    import Nav from 'react-bootstrap/Nav';
-    import Navbar from 'react-bootstrap/Navbar';
-    import { NavLink } from 'react-router-dom';
-    import { Link, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import { Link}from 'react-scroll';
 
 
 const Header = () => {

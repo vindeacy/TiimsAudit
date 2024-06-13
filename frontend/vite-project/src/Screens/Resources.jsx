@@ -58,11 +58,11 @@ return (
     <Carousel.Item>
       <div className="testimonial-container d-flex flex-column align-items-center">
         <div className="image-container-blog">
-          <img
+          {/* <img
             src="../src/images/woman.png"
             alt="Testimonial Image"
             className="testimonial-image"
-          />
+          /> */}
         </div>
         <div className="testimonial-info text-center">
           <p className="testimonial-name"><b>Jamil McAlaka</b></p>
@@ -75,11 +75,11 @@ return (
     <Carousel.Item>
       <div className="testimonial-container d-flex flex-column align-items-center">
         <div className="image-container-blog">
-          <img
+          {/* <img
             src="../src/images/man1.png"
             alt="Testimonial Image"
             className="testimonial-image"
-          />
+          /> */}
         </div>
         <div className="testimonial-info text-center">
           <p className="testimonial-name"><b>Bruce Onduru</b></p>
@@ -92,11 +92,11 @@ return (
     <Carousel.Item>
       <div className="testimonial-container d-flex flex-column align-items-center">
         <div className="image-container-blog">
-          <img
+          {/* <img
             src="../src/images/man2.png"
             alt="Testimonial Image"
             className="testimonial-image"
-          />
+          /> */}
         </div>
         <div className="testimonial-info text-center">
           <p className="testimonial-name"><b>Mary Raget</b></p>
