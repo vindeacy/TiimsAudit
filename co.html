@@ -1,0 +1,39 @@
+import express from "express"
+
+const router = express.Router()
+import {
+testWorking,
+sendMessage
+} from "../Controller/contactUsController.js"
+
+router.post("/", sendMessage)
+
+contus
+export default router
+
+//import {sendingEmails} from '../utils/sendEmailContact.js'
+import {asyncHandler} from '../middleware/asyncHandler.js'
+
+const testWorking = (req, res) => {
+    res.json("It worked!!")
+}
+
+const sendMessage = asyncHandler( async (req, res) =>{
+    const {Email, message, firstName, lastName} = req.body
+    const currentTimestamp = new Date().toDateString();
+
+   try{
+    await sendingEmails(Email, message, firstName, lastName,currentTimestamp)
+    res.json({ success: true, message: 'Email sent successfully!' });
+   }catch(error){
+    console.error('Error sending email:', error);
+    res.status(500).json({ success: false, error: 'Failed to send email' });
+   }
+
+
+})
+
+export {
+    testWorking,
+    sendMessage
+}
