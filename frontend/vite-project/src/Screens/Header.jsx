@@ -2,7 +2,7 @@ import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { Link}from 'react-scroll';
+import { Link } from 'react-scroll';  
 
 
 const Header = () => {
@@ -24,10 +24,14 @@ return (
           </Nav.Link>
           <Nav.Link className="me-auto " style={{color: "#21202E"}}>
             <Link  to="Our services" spy={true} smooth={true} offset={-70} duration={500} style={{textDecoration: "none"}} >
-            Oue Services
+            Our Services
             </Link>
           </Nav.Link>
-          
+          <Nav.Link className="me-auto " style={{color: "#21202E"}}>
+            <Link  to="Our services" spy={true} smooth={true} offset={-70} duration={500} style={{textDecoration: "none"}} >
+            About Us
+            </Link>
+          </Nav.Link>
           
         </Nav>
        

@@ -1,23 +1,21 @@
 import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Carousel from 'react-bootstrap/Carousel';
-import Ellipse1 from '../Images/Ellipse1.svg'
-import Ellipse2 from '../Images/Ellipse2.svg'
 import Row from 'react-bootstrap/Row';
 import Accordion from 'react-bootstrap/Accordion';
 import Col from 'react-bootstrap/Col';
 import { IoIosAdd } from "react-icons/io";
-import './aboutus.css';
 import Card from 'react-bootstrap/Card';
 
 const TextCard = ({ title, text, limit }) => {
     const [isTruncated, setIsTruncated] = useState(true);
     const toggleTruncation = () => setIsTruncated(!isTruncated);
+
   
     return (
       <Card className='card-style'>
         <div className='card-image-container'>
-          <Card.Img variant="top" src={Ellipse1} alt="First slide" className='card-img' />
+          <Card.Img variant="top" alt="First slide" className='card-img' />
         </div>
         <Card.Body>
           <Card.Title style={{margin: 0, padding: 0}}>{title}</Card.Title>
@@ -67,33 +65,57 @@ return (
       <div className='ml-5'>
         <Accordion defaultActiveKey="0">
           <Accordion.Item eventKey="0">
-            <Accordion.Header><IoIosAdd color="orange" size="2em"/><b>Innovation</b></Accordion.Header>
+            <Accordion.Header><IoIosAdd color="orange" size="2em"/><b>accuracy</b></Accordion.Header>
             <Accordion.Body style={{lineHeight:'2', backgroundColor:"#253B85", color:"#ffffff"}}>
-             <p></p>
+             <p>We are committed to providing accurate financial information that is essential for makuing informed business decisions</p>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="1">
             <Accordion.Header><IoIosAdd color="orange" size="2em"/><b>Integrity</b></Accordion.Header>
             <Accordion.Body style={{lineHeight:'2', backgroundColor:"#253B85", color:"#ffffff"}}>
-              <p></p>
+              <p> We uphold the highest ethical standards in all our dealings with cliens, colleagues and regulators</p>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="2">
-            <Accordion.Header> <IoIosAdd color="orange" size="2em"/><b>Collaboration</b></Accordion.Header>
+            <Accordion.Header> <IoIosAdd color="orange" size="2em"/><b>Professionalism</b></Accordion.Header>
             <Accordion.Body style={{lineHeight:'2', backgroundColor:"#253B85", color:"#ffffff"}}>
-             <p></p>
+             <p> We conduct ourselves with the utmost Professionalism in all of our work.</p>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="3">
-            <Accordion.Header><IoIosAdd color="orange" size="2em"/><b>Excellence</b></Accordion.Header>
+            <Accordion.Header><IoIosAdd color="orange" size="2em"/><b>Collaboration and Team Work</b></Accordion.Header>
             <Accordion.Body style={{lineHeight:'2', backgroundColor:"#253B85", color:"#ffffff"}}>
-              <p></p>
+              <p> We belive that Collaboration and team work  lead to better outcomes for our clients and for our firm</p>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="4">
-            <Accordion.Header> <IoIosAdd color="orange" size="2em"/> <b>Adaptability </b></Accordion.Header>
+            <Accordion.Header> <IoIosAdd color="orange" size="2em"/> <b>Client Focus </b></Accordion.Header>
             <Accordion.Body style={{lineHeight:'2', backgroundColor:"#253B85", color:"#ffffff"}}>
-              <p></p>
+              <p> Our client's success is our pride. We are dedicated to understanding their unique needs and providing them with the most accurate and relevant and customized solutions to help them achieve their goals.</p>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="3">
+            <Accordion.Header><IoIosAdd color="orange" size="2em"/><b>Innovation</b></Accordion.Header>
+            <Accordion.Body style={{lineHeight:'2', backgroundColor:"#253B85", color:"#ffffff"}}>
+              <p> Pushing past the status  quo with bold and progressive ideas. Being curious and challenging deeply ingrained assumptions and traditional methods. Innovation learning from both success and failures to embrace new ways to achive success.</p>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="3">
+            <Accordion.Header><IoIosAdd color="orange" size="2em"/><b>Compliance</b></Accordion.Header>
+            <Accordion.Body style={{lineHeight:'2', backgroundColor:"#253B85", color:"#ffffff"}}>
+              <p> Adhering to all relevant laws, regulations and accounting standards</p>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="3">
+            <Accordion.Header><IoIosAdd color="orange" size="2em"/><b>Trustworthiness</b></Accordion.Header>
+            <Accordion.Body style={{lineHeight:'2', backgroundColor:"#253B85", color:"#ffffff"}}>
+              <p> Building trust with clients through consistent reliabilty and integrity</p>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="3">
+            <Accordion.Header><IoIosAdd color="orange" size="2em"/><b>Client-Centric</b></Accordion.Header>
+            <Accordion.Body style={{lineHeight:'2', backgroundColor:"#253B85", color:"#ffffff"}}>
+              <p> Fousing and meeting needs and delivering exceptional services</p>
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>

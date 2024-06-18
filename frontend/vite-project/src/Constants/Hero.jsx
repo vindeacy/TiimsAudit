@@ -3,12 +3,8 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { IoIosAdd } from "react-icons/io";
 import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
-import HeroImg from '../Images/HeroImg.svg'
-
 
 const Hero = () => {
- 
-
 return (
     <div id='home' style={{backgroundColor: "#253B85", color: "FFFFFF", marginTop: '80px'}}className="flex flex-col min-h-screen min-w-screen overflow-hidden">
         <div className="custom-container mx-auto" > {/* Custom container for max-width and centering */}
@@ -72,9 +68,7 @@ return (
             </Col>
             <br></br>
             <Col className="d-flex justify-content-center align-items-center">
-    <div className="right-section">
-      <img src={HeroImg} alt="image" style={{ width: '110%', height: '150%' }} />
-    </div>
+   
   </Col>
   
           </Row>

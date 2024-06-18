@@ -1,16 +1,14 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import { Link } from 'react-scroll';
+import { Navbar, Container, NavbarBrand, Nav, NavbarToggle, NavbarCollapse } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
     <Navbar expand="lg" fixed="top" style={{ color: "#21202E", backgroundColor: "#FFFAFA", borderBottom: '2px solid #F6A200' }}>
       <Container fluid>
-        <Navbar.Brand href="/" style={{ color: "#21202E" }}>Tims Audit</Navbar.Brand>
+        <NavbarBrand href="/" style={{ color: "#21202E" }}>Tims Audit</NavbarBrand>
         <div className='justify-content-end'>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" style={{ color: "#21202E" }} />
+          <NavbarToggle aria-controls="basic-navbar-nav" style={{ color: "#21202E" }} />
           <Navbar.Collapse className='justify-content-end' id="basic-navbar-nav" style={{ color: "#21202E" }}>
             <Nav className="me-auto" style={{ color: "#21202E" }}>
               <Navbar.Brand href="/">Home</Navbar.Brand>

@@ -8,13 +8,13 @@ import Header from './Screens/Header.jsx'
 import Contact from './Screens/Contact.jsx'
 import AboutUs from './Screens/AboutUs.jsx'
 import Resources from './Screens/Resources.jsx'
-import Services from './Screens/Services.jsx'
 import Audit from './Screens/Audit.jsx'
+import Landingpage from './Screens/Landingpage.jsx'
 
 const routes = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
-      <Route index={true} path='/' element={<Homepage />}/>
+     {/*  <Route index={true} path='/' element={<Homepage />}/> */}
       <Route  path='/hello' element={<Homepage/>}/>
       <Route  path='/header' element={<Header />}/>
       <Route  path='/hero' element={<Hero />}/>
@@ -22,7 +22,8 @@ const routes = createBrowserRouter(
       <Route  path='/aboutus' element={<AboutUs />}/>
       <Route  path='/audit' element={<Audit />}/>
       <Route  path='/resources' element={<Resources />}/>
-      <Route  path='/services' element={<Services />}/>
+      <Route  path='/landingpage' element={<Landingpage />}/>
+      
 
       </Route>
 )

@@ -1,9 +1,8 @@
 import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col } from "react-bootstrap";
 import { IoIosAdd } from "react-icons/io";
-import Accordion from 'react-bootstrap/Accordion';
-import Card from 'react-bootstrap/Card';
-
+import { Accordion } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 
 
 const Hero = () => {
@@ -18,7 +17,7 @@ return (
                 <h1 style={{color: "#F6A200"}}>Welcome to Tim Audits.
   </h1>
   <br></br>
-                <p style={{lineHeight: '2'}}> ""
+                <p style={{lineHeight: '2'}}> Our Professional philosphy constitutes a strong set of values which is a driving force for excellent performance and delivery by the staff as Tims Audits. The values that provide a common base of ideas that we all share, gfuiding us in our daily actions and decisions are:
   </p>
                 <h2 style={{color: "#F6A200"}}><b>What we do</b></h2>
                 <Accordion defaultActiveKey="0" flush className="overflow-auto" style={{backgroundColor: "#253B85", color: "#FFFFFF"}}>
