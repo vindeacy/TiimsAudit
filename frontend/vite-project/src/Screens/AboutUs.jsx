@@ -47,108 +47,84 @@ const AboutUs = () => {
 
 return (
     <div  id='aboutus'>
-          <Container  fluid style= {{minHeight:"60vh"}} className="Main-cont pb-5 mt-5">
-        <Row className='Row-cont'>
-          <Col className='Col-cont text-center'>
-            <h1 style={{color:"#F6A200"}}><b>About US</b></h1>
-            <br></br>
-            <div className = 'Main-cont-titles'>
-              <h3 style={{color:'#ffffff'}}><b>Our Mission and Vision</b> </h3>
-            </div>
-          </Col>
-        </Row>
+<Container fluid style={{ minHeight: "60vh" }} className="about-section pb-5 mt-5">
+  <Row className="Row-cont">
+    <Col className="Col-cont text-center">
+      <h1 className="about-title"><b>About Us</b></h1>
+      <br />
+      <div className="Main-cont-titles">
+        <h3 className="mission-title"><b>Our Mission and Vision</b></h3>
+      </div>
+    </Col>
+  </Row>
 
-   <Row className="justify-content-center">
-  <Col md={4} className="mr-3 ml-3" style={{marginRight: "30px"}}>
-    <div className='ml-10px'>
-      <h4 className="  left-section text-start"><b>Our Core Values</b></h4>
-      <div className='ml-5'>
-        <Accordion defaultActiveKey="0">
-          <Accordion.Item eventKey="0">
-            <Accordion.Header><IoIosAdd color="orange" size="2em"/><b>accuracy</b></Accordion.Header>
-            <Accordion.Body style={{lineHeight:'2', backgroundColor:"#253B85", color:"#ffffff"}}>
-             <p>We are committed to providing accurate financial information that is essential for makuing informed business decisions</p>
-            </Accordion.Body>
-          </Accordion.Item>
-          <Accordion.Item eventKey="1">
-            <Accordion.Header><IoIosAdd color="orange" size="2em"/><b>Integrity</b></Accordion.Header>
-            <Accordion.Body style={{lineHeight:'2', backgroundColor:"#253B85", color:"#ffffff"}}>
-              <p> We uphold the highest ethical standards in all our dealings with cliens, colleagues and regulators</p>
-            </Accordion.Body>
-          </Accordion.Item>
-          <Accordion.Item eventKey="2">
-            <Accordion.Header> <IoIosAdd color="orange" size="2em"/><b>Professionalism</b></Accordion.Header>
-            <Accordion.Body style={{lineHeight:'2', backgroundColor:"#253B85", color:"#ffffff"}}>
-             <p> We conduct ourselves with the utmost Professionalism in all of our work.</p>
-            </Accordion.Body>
-          </Accordion.Item>
-          <Accordion.Item eventKey="3">
-            <Accordion.Header><IoIosAdd color="orange" size="2em"/><b>Collaboration and Team Work</b></Accordion.Header>
-            <Accordion.Body style={{lineHeight:'2', backgroundColor:"#253B85", color:"#ffffff"}}>
-              <p> We belive that Collaboration and team work  lead to better outcomes for our clients and for our firm</p>
-            </Accordion.Body>
-          </Accordion.Item>
-          <Accordion.Item eventKey="4">
-            <Accordion.Header> <IoIosAdd color="orange" size="2em"/> <b>Client Focus </b></Accordion.Header>
-            <Accordion.Body style={{lineHeight:'2', backgroundColor:"#253B85", color:"#ffffff"}}>
-              <p> Our client's success is our pride. We are dedicated to understanding their unique needs and providing them with the most accurate and relevant and customized solutions to help them achieve their goals.</p>
-            </Accordion.Body>
-          </Accordion.Item>
-          <Accordion.Item eventKey="3">
-            <Accordion.Header><IoIosAdd color="orange" size="2em"/><b>Innovation</b></Accordion.Header>
-            <Accordion.Body style={{lineHeight:'2', backgroundColor:"#253B85", color:"#ffffff"}}>
-              <p> Pushing past the status  quo with bold and progressive ideas. Being curious and challenging deeply ingrained assumptions and traditional methods. Innovation learning from both success and failures to embrace new ways to achive success.</p>
-            </Accordion.Body>
-          </Accordion.Item>
-          <Accordion.Item eventKey="3">
-            <Accordion.Header><IoIosAdd color="orange" size="2em"/><b>Compliance</b></Accordion.Header>
-            <Accordion.Body style={{lineHeight:'2', backgroundColor:"#253B85", color:"#ffffff"}}>
-              <p> Adhering to all relevant laws, regulations and accounting standards</p>
-            </Accordion.Body>
-          </Accordion.Item>
-          <Accordion.Item eventKey="3">
-            <Accordion.Header><IoIosAdd color="orange" size="2em"/><b>Trustworthiness</b></Accordion.Header>
-            <Accordion.Body style={{lineHeight:'2', backgroundColor:"#253B85", color:"#ffffff"}}>
-              <p> Building trust with clients through consistent reliabilty and integrity</p>
-            </Accordion.Body>
-          </Accordion.Item>
-          <Accordion.Item eventKey="3">
-            <Accordion.Header><IoIosAdd color="orange" size="2em"/><b>Client-Centric</b></Accordion.Header>
-            <Accordion.Body style={{lineHeight:'2', backgroundColor:"#253B85", color:"#ffffff"}}>
-              <p> Fousing and meeting needs and delivering exceptional services</p>
-            </Accordion.Body>
-          </Accordion.Item>
-        </Accordion>
+  <Row className="justify-content-center">
+    <Col md={4} className="mr-3 ml-3" style={{ marginRight: "30px" }}>
+      <div className="ml-10px">
+        <h4 className="left-section"><b>Our Core Values</b></h4>
+        <div className="ml-5">
+          <Accordion defaultActiveKey="0">
+            <Accordion.Item eventKey="0">
+              <Accordion.Header><IoIosAdd color="orange" size="2em" /><b>Accuracy</b></Accordion.Header>
+              <Accordion.Body style={{ lineHeight: '2', backgroundColor: "#253B85", color: "#ffffff" }}>
+                <p>We are committed to providing accurate financial information essential for making informed business decisions.</p>
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="1">
+              <Accordion.Header><IoIosAdd color="orange" size="2em" /><b>Integrity</b></Accordion.Header>
+              <Accordion.Body style={{ lineHeight: '2', backgroundColor: "#253B85", color: "#ffffff" }}>
+                <p>We uphold the highest ethical standards in all our dealings with clients, colleagues, and regulators.</p>
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="2">
+              <Accordion.Header><IoIosAdd color="orange" size="2em" /><b>Professionalism</b></Accordion.Header>
+              <Accordion.Body style={{ lineHeight: '2', backgroundColor: "#253B85", color: "#ffffff" }}>
+                <p>Everyone at our organization demonstrates professionalism and contributes to our collaborative culture.</p>
+              </Accordion.Body>
+            </Accordion.Item>
+          </Accordion>
+        </div>
       </div>
-    </div>
-  </Col>
-  <Col md={4} className="mr-4 ml-3" style={{backgroundColor: "#253B85", borderRadius:"10px"}}>
-  <Carousel pause='hover' className='bg mt-2 mb-3' indicators={false} nextIcon={<span className="carousel-control-next-icon" />} prevIcon={<span className="carousel-control-prev-icon" />}>
-    <Carousel.Item className='carousel'>
-      <div className="carouselDiv">
-        <TextCard className title="Vision" text={longText} />
-      </div>
-    </Carousel.Item>
+    </Col>
+  </Row>
+  <Row className="justify-content-center">
+    <Col md={4} className="mr-3 ml-3" style={{ marginRight: "30px" }}>
+      <div className="ml-10px">
+        <h4 className="left-section"><b>Vision</b></h4>
+        <div className="ml-5">
+          <Accordion defaultActiveKey="0">
+            <Accordion.Item eventKey="0">
+              <Accordion.Header><IoIosAdd color="orange" size="2em" /><b>Navigating complexity with clarity</b></Accordion.Header>
+              <Accordion.Body style={{ lineHeight: '2', backgroundColor: "#253B85", color: "#ffffff" }}>
+                <ol>
+                <li>This vision statement speaks to the firm's ability to navigate complex financial landscapes with clarity, ensuring clients understand their finances</li>
+                <li>Caldwell Consulting and Training: “Help accounting teams achieve their dreams and goals via coaching and education.</li>
+                <li>Two Roads: We believe its hard to lead alone. In business, as in life, partnership provides wisdom, strength, and direction.</li>
+                <li>Hemingway Bailey: In everything that we do that we shall improve our team, clients, and community through our knowledge and guidance</li>
+                </ol>
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="1">
+              <Accordion.Header><IoIosAdd color="orange" size="2em" /><b>Integrity</b></Accordion.Header>
+              <Accordion.Body style={{ lineHeight: '2', backgroundColor: "#253B85", color: "#ffffff" }}>
+                <li>We uphold the highest ethical standards in all our dealings with clients, colleagues, and regulators.</li>
+                <li>Honesty and Truthfulness: Accountants must ensure accuracy and honesty in all financial transactions and reporting.</li>
+                <li>Confidentiality: Accountants must maintain the confidentiality of their clients financial information.</li>
+                <li>Objectivity and Impartiality: Reporting financial information objectively, without bias, is essential</li>
 
-    <Carousel.Item className='carousel'>
-      <div className="carouselDiv">
-        <TextCard title="Mission" style={{margin:0, padding:10,backgroundColor:"#253B85", color:"#ffffff"}} text={detailedText} />
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="2">
+              <Accordion.Header><IoIosAdd color="orange" size="2em" /><b>Professionalism</b></Accordion.Header>
+              <Accordion.Body style={{ lineHeight: '2', backgroundColor: "#253B85", color: "#ffffff" }}>
+                <p>Everyone at our organization demonstrates professionalism and contributes to our collaborative culture.</p>
+              </Accordion.Body>
+            </Accordion.Item>
+          </Accordion>
+        </div>
       </div>
-    </Carousel.Item>
-
-    <Carousel.Item className='carousel'>
-      <div className="carouselDiv">
-        <TextCard title="Objectives" style={{margin:0, padding:10,backgroundColor:"#253B85", color:"#ffffff"}}  text={fullText.join(' ')}/>
-      </div>
-    </Carousel.Item>
-    <Carousel.Item className='carousel'>
-      <div className="carouselDiv">
-        <TextCard title="Strategic Objectives" style={{margin:0, padding:10,backgroundColor:"#253B85", color:"#ffffff"}}  text={comprehensiveText.join(' ')} />
-      </div>
-    </Carousel.Item>
-  </Carousel>
-</Col>
-</Row>
+    </Col>
+  </Row>
 </Container>
     </div>
   )

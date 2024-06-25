@@ -22,6 +22,11 @@ const Header = () => {
                   Our Services
                 </Link>
               </Nav.Link>
+              <Nav.Link style={{ color: "#21202E" }}>
+                <Link to="Our services" spy={true} smooth={true} offset={-70} duration={500} style={{ textDecoration: "none" }}>
+                  About Us
+                </Link>
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </div>
